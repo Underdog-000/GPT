@@ -1,1 +1,246 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Энергия и Баланс - Капсулы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #e0f5ff; /* light blue */
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c7a7b; /* teal */
+        }
+        .order-button {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #38b2ac; /* teal */
+            color: white;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .order-button:hover {
+            background-color: #2c7a7b;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, #f0fbff, #e0f5ff);
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #2c7a7b;
+        }
+        .hero p {
+            font-size: 20px;
+            color: #4a5568;
+        }
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: #f9fafb;
+        }
+        .benefits .item {
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+        }
+        .benefits .icon {
+            font-size: 40px;
+        }
+        .action {
+            padding: 40px 20px;
+        }
+        .action h2 {
+            text-align: center;
+            color: #2c7a7b;
+        }
+        .steps {
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .step {
+            width: 250px;
+            margin: 10px;
+            background-color: #e6fffa;
+            border-radius: 6px;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .reviews {
+            padding: 40px 20px;
+            background-color: #f9fafb;
+        }
+        .review-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .review {
+            width: 250px;
+            margin: 10px;
+            text-align: center;
+        }
+        .review img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .faq {
+            padding: 40px 20px;
+        }
+        .faq h2 {
+            text-align: center;
+            color: #2c7a7b;
+        }
+        .faq-item {
+            max-width: 800px;
+            margin: 10px auto;
+        }
+        .order {
+            padding: 40px 20px;
+            background-color: #e6fffa;
+        }
+        .order h2 {
+            text-align: center;
+            color: #2c7a7b;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+        }
+        form input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            padding: 10px;
+            background-color: #38b2ac;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #2c7a7b;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e0f5ff;
+            color: #4a5568;
+        }
+        @media (max-width: 768px) {
+            .benefits .item, .step, .review {
+                width: 100%;
+            }
+            header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Энергия и Баланс</div>
+        <a href="#order" class="order-button">Заказать</a>
+    </header>
+    <section class="hero">
+        <h1>Верните энергию и баланс</h1>
+        <p>Натуральные капсулы для поддержки активного образа жизни</p>
+    </section>
+    <section class="benefits">
+        <div class="item">
+            <div class="icon">💪</div>
+            <p>Повышает жизненный тонус</p>
+        </div>
+        <div class="item">
+            <div class="icon">🌿</div>
+            <p>Натуральный состав</p>
+        </div>
+        <div class="item">
+            <div class="icon">🔥</div>
+            <p>Ускоряет метаболизм</p>
+        </div>
+    </section>
+    <section class="action">
+        <h2>Как действует средство</h2>
+        <div class="steps">
+            <div class="step">1. Поддерживает энергетический баланс</div>
+            <div class="step">2. Улучшает общее самочувствие</div>
+            <div class="step">3. Помогает сохранять активность весь день</div>
+        </div>
+    </section>
+    <section class="reviews">
+        <h2>Отзывы покупателей</h2>
+        <div class="review-list">
+            <div class="review">
+                <img src="https://via.placeholder.com/80" alt="Фото 1">
+                <p><strong>Ирина, 45</strong></p>
+                <p>Отличное средство! Чувствую себя бодрее.</p>
+            </div>
+            <div class="review">
+                <img src="https://via.placeholder.com/80" alt="Фото 2">
+                <p><strong>Сергей, 52</strong></p>
+                <p>Помогло вернуть силы после работы.</p>
+            </div>
+            <div class="review">
+                <img src="https://via.placeholder.com/80" alt="Фото 3">
+                <p><strong>Ольга, 48</strong></p>
+                <p>Нравится натуральный состав и эффект.</p>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <h2>Вопросы и ответы</h2>
+        <div class="faq-item">
+            <p><strong>Как применять капсулы?</strong></p>
+            <p>Принимайте по 1 капсуле дважды в день во время еды.</p>
+        </div>
+        <div class="faq-item">
+            <p><strong>Есть ли противопоказания?</strong></p>
+            <p>Продукт не рекомендуется при индивидуальной непереносимости компонентов.</p>
+        </div>
+        <div class="faq-item">
+            <p><strong>Нужно ли соблюдать диету?</strong></p>
+            <p>Для лучшего эффекта придерживайтесь сбалансированного питания.</p>
+        </div>
+    </section>
+    <section class="order" id="order">
+        <h2>Сделать заказ</h2>
+        <form>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="tel" placeholder="Телефон" required>
+            <button type="submit">Заказать</button>
+        </form>
+    </section>
+    <footer>
+        <p>Свяжитесь с нами: info@example.com</p>
+        <p>&copy; 2023 Энергия и Баланс</p>
+    </footer>
+</body>
+</html>
